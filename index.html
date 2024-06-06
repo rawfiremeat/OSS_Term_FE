@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="badge" id="badge">
+        <div class="profile-container">
+            <img src="./img/profile.JPG" alt="프로필 사진" class="profile-image">
+            <div class="info">
+                <p class="name">오준혁</p>
+                <p class="title">정보융합학부생</p>
+            </div>
+        </div>
+        <p id="caution">눌러서 다음으로</p>
+    </div>
+
+    <div class="profile-content" id="profile-content">
+        <header class="header">
+            <div class="logo">
+                <h1>🤖 5jun_99</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="introduction">
+            <div id="nameNprofile">
+                <div id="introname"><h1 >JunHyuk Oh</h1></div>
+                <div class="profile-card">
+                    <h3>Sites</h3>
+                    <p><a href="https://www.instagram.com/5jun_99/">Instagram</a></p>
+                    <p><a href="https://velog.io/@9409velog/posts">Velog</a></p>
+                    <p><a href="https://github.com/rawfiremeat">Github</a></p>
+                </div>
+            </div>
+            <div class="middle_sec">
+                <h2>백엔드 개발자를 꿈꾸는 정보융합학부생</h2>
+                <p>
+                    백엔드 개발은 데이터의 흐름을 따라가면서 시스템이 어떻게 작동하는지 이해하는 과정에서 재미를 느낍니다.
+                    <br>또한, 사용자가 인지하지 못하는 애플리케이션의 백그라운드에서 숨겨진 로직을 만들어내고 효율적인 개발을 하는 것을 좋아합니다.
+                </p>
+            </div>
+            <br>
+            <div class="middle_sec">
+                <h2>목표는 데이터 엔지니어</h2>
+                <p>학부 강의를 들으면서, 데이터 엔지니어라는 직군에 관심이 생겼습니다. 데이터 파이프라인을 구축하고 관리하는 것에 흥미를 두고 있습니다. 
+                    <br>물론 실제 데이터 직군 취업 시장에서 아직 세부적인 역할이 나뉘어져있진 않아서 한 직군만 공부하기 보다 여러 시선으로 공부를 해보려 합니다.</p>
+            </div>
+            
+        </div>
+        <div id="skillsec">
+            <div class="skillset">Skill Set</div>
+            <div id="skillsCarousel">
+                <div class="skill-card">Python</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">redis</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">Spring Boot</div>
+            </div>
+        </div>
+        <div id="hobby-text">
+            <h2>사진찍기는 나의 취미</h2>
+                <p>여행을 갈 때면 항상 사진기를 챙겨갑니다. 다음은 제가 찍은 사진들입니다. </p>
+                  
+        </div>
+        <div class="hobby">
+            <div class="bg bg_type1"></div>
+            <div class="bg bg_type2"></div>
+            <div class="bg bg_type3"></div>
+            <div class="bg bg_type4"></div>
+        </div>
+        <div class="guestbook">
+            <h3>방명록</h3>
+            <form id="guestbook-form">
+                <input type="text" id="name" placeholder="이름" required>
+                <textarea id="comment-text" placeholder="방명록을 남겨주세요" required></textarea>
+                <button type="submit">전송</button>
+            </form>
+            <div class="comments" id="comments">
+            </div>
+        </div>
+      
+    </div>
+    
+    
+</body>
+<script src="script.js"></script>
+
+</html>
