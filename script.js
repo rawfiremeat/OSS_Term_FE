@@ -31,10 +31,10 @@ document.addEventListener('scroll', function() {
     }
 });
 
-const host = "http://127.0.0.1:8000";
+const host = "http://3.213.20.133:8080";
 async function getComments() {
     try {
-        const response = await axios.get('http://localhost:8000/comments');
+        const response = await axios.get(`${host}/comments`);
         const comments = response.data.comments;
         const commentsDiv = document.getElementById('comments');
         commentsDiv.innerHTML = '';
@@ -57,7 +57,7 @@ async function postComment(event) {
     const commentText = document.getElementById('comment-text').value;
     if (name.trim() && commentText.trim()) { // 값이 있으면
         try {
-            await axios.post('http://localhost:8000/comments', {
+            await axios.post(`${host}/comments`, {
                 id: 0,
                 name: name,
                 comments: commentText,
@@ -74,7 +74,7 @@ async function postComment(event) {
 
 async function deleteComment(id) {
     try {
-        await axios.delete(`http://localhost:8000/comments/${id}`);
+        await axios.delete(`${host}/comments/${id}`);
         getComments();
     } catch (error) {
         console.error('Error deleting comment:', error);
