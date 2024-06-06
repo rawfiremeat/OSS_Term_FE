@@ -42,7 +42,7 @@ async function getComments() {
         comments.forEach(comment => {
             const commentElement = document.createElement('div');
             commentElement.classList.add('comment');
-            commentElement.innerHTML = `<strong>${comment.name}:</strong> ${comment.comments}${comment.comments} <span class="created-at">${comment.createdAt}</span> <button class="delete-btn" onclick="deleteComment(${comment.id})">X</button>`;
+            commentElement.innerHTML = `<strong>${comment.name}:</strong> ${comment.comments} <span class="created-at">${comment.createdAt}</span> <button class="delete-btn" onclick="deleteComment(${comment.id})">X</button>`;
             console.log(comment.createdAt);
             commentsDiv.appendChild(commentElement);
         });
